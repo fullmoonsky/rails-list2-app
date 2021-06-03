@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @asset.title %>
+</p>
+
+<p>
+  <strong>Title long:</strong>
+  <%= @asset.title_long %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @asset.description %>
+</p>
+
+<p>
+  <strong>Pdp:</strong>
+  <%= @asset.pdp_id %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @asset.duration %>
+</p>
+
+<p>
+  <strong>Content rating:</strong>
+  <%= @asset.content_rating %>
+</p>
+
+<p>
+  <strong>Community rating:</strong>
+  <%= @asset.community_rating %>
+</p>
+
+<p>
+  <strong>Thumbnail image:</strong>
+  <%= @asset.thumbnail_image %>
+</p>
+
+<p>
+  <strong>Content type:</strong>
+  <%= @asset.content_type %>
+</p>
+
+<p>
+  <strong>File name:</strong>
+  <%= @asset.file_name %>
+</p>
+
+<%= link_to 'Edit', edit_asset_path(@asset) %> |
+<%= link_to 'Back', assets_path %>

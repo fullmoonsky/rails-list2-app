@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Assets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Title long</th>
+      <th>Description</th>
+      <th>Pdp</th>
+      <th>Duration</th>
+      <th>Content rating</th>
+      <th>Community rating</th>
+      <th>Thumbnail image</th>
+      <th>Content type</th>
+      <th>File name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @assets.each do |asset| %>
+      <tr>
+        <td><%= asset.title %></td>
+        <td><%= asset.title_long %></td>
+        <td><%= asset.description %></td>
+        <td><%= asset.pdp_id %></td>
+        <td><%= asset.duration %></td>
+        <td><%= asset.content_rating %></td>
+        <td><%= asset.community_rating %></td>
+        <td><%= asset.thumbnail_image %></td>
+        <td><%= asset.content_type %></td>
+        <td><%= asset.file_name %></td>
+        <td><%= link_to 'Show', asset %></td>
+        <td><%= link_to 'Edit', edit_asset_path(asset) %></td>
+        <td><%= link_to 'Destroy', asset, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Asset', new_asset_path %>

@@ -1,0 +1,22 @@
+<%= form_with(model: content_rating) do |form| %>
+  <% if content_rating.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(content_rating.errors.count, "error") %> prohibited this content_rating from being saved:</h2>
+
+      <ul>
+        <% content_rating.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :rating %>
+    <%= form.text_field :rating %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

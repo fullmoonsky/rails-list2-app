@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @content_rating.rating %>
+</p>
+
+<%= link_to 'Edit', edit_content_rating_path(@content_rating) %> |
+<%= link_to 'Back', content_ratings_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @content_provider.name %>
+</p>
+
+<p>
+  <strong>Thumbnail image:</strong>
+  <%= @content_provider.thumbnail_image %>
+</p>
+
+<%= link_to 'Edit', edit_content_provider_path(@content_provider) %> |
+<%= link_to 'Back', content_providers_path %>

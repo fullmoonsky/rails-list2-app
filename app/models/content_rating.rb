@@ -1,0 +1,2 @@
+class ContentRating < ApplicationRecord
+end
