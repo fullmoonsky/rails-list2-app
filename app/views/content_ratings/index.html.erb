@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<!--<p id="notice"><%= notice %></p>-->
 
 <h1>Content Ratings</h1>
 
@@ -14,9 +14,9 @@
     <% @content_ratings.each do |content_rating| %>
       <tr>
         <td><%= content_rating.rating %></td>
-        <td><%= link_to 'Show', content_rating %></td>
-        <td><%= link_to 'Edit', edit_content_rating_path(content_rating) %></td>
-        <td><%= link_to 'Destroy', content_rating, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', content_rating, class: "btn btn-outline-primaryy" %></td>
+        <td><%= link_to 'Edit', edit_content_rating_path(content_rating), class: "btn btn-outline-primary" %></td>
+        <td><%= link_to 'Destroy', content_rating, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Content Rating', new_content_rating_path %>
+<%= link_to 'New Content Rating', new_content_rating_path, class: "btn btn-outline-primary" %>

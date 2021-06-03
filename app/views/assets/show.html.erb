@@ -1,5 +1,6 @@
-<p id="notice"><%= notice %></p>
-
+<!--<p id="notice"><%= notice %></p>-->
+<h1>Asset Detail</h1>
+<br>
 <p>
   <strong>Title:</strong>
   <%= @asset.title %>
@@ -50,5 +51,5 @@
   <%= @asset.file_name %>
 </p>
 
-<%= link_to 'Edit', edit_asset_path(@asset) %> |
-<%= link_to 'Back', assets_path %>
+<%= link_to 'Edit', edit_asset_path(@asset), class: "btn btn-outline-primary" %> 
+<%= link_to 'Back', assets_path, class: "btn btn-outline-primary" %>

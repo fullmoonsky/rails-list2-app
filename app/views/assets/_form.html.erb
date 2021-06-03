@@ -12,56 +12,56 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :title %>
+    <strong><%= form.label :title %></strong>
     <%= form.text_field :title %>
   </div>
 
   <div class="field">
-    <%= form.label :title_long %>
+    <strong><%= form.label :title_long %></strong>
     <%= form.text_field :title_long %>
   </div>
 
   <div class="field">
-    <%= form.label :description %>
+    <strong><%= form.label :description %></strong>
     <%= form.text_field :description %>
   </div>
 
   <div class="field">
-    <%= form.label :pdp_id %>
+    <strong><%= form.label :pdp_id %></strong>
     <%= form.number_field :pdp_id %>
   </div>
 
   <div class="field">
-    <%= form.label :duration %>
+    <strong><%= form.label :duration %></strong>
     <%= form.number_field :duration %>
   </div>
 
   <div class="field">
-    <%= form.label :content_rating %>
+    <strong><%= form.label :content_rating %></strong>
     <%= form.text_field :content_rating %>
   </div>
 
   <div class="field">
-    <%= form.label :community_rating %>
+    <strong><%= form.label :community_rating %></strong>
     <%= form.number_field :community_rating %>
   </div>
 
   <div class="field">
-    <%= form.label :thumbnail_image %>
+    <strong><%= form.label :thumbnail_image %></strong>
     <%= form.text_field :thumbnail_image %>
   </div>
 
   <div class="field">
-    <%= form.label :content_type %>
+    <strong><%= form.label :content_type %></strong>
     <%= form.number_field :content_type %>
   </div>
 
   <div class="field">
-    <%= form.label :file_name %>
+    <strong><%= form.label :file_name %></strong>
     <%= form.text_field :file_name %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-primary" %>
   </div>
 <% end %>

@@ -12,26 +12,26 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
+    <strong><%= form.label :name %></strong>
     <%= form.text_field :name %>
   </div>
 
   <div class="field">
-    <%= form.label :description %>
+    <strong><%= form.label :description %></strong>
     <%= form.text_field :description %>
   </div>
 
   <div class="field">
-    <%= form.label :content_rating %>
-    <%= form.text_field :content_rating %>
+    <strong><%= form.label :content_rating %></strong>
+    <%= form.select :content_rating, ContentRating.all.collect {|u| [u.rating]} %>
   </div>
 
   <div class="field">
-    <%= form.label :content_provider_id %>
-    <%= form.text_field :content_provider_id %>
+    <strong><%= form.label :content_provider_id %></strong>
+    <%= form.select :content_provider_id, ContentProvider.all.collect {|c| [c.name, c.id]} %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit  class: "btn btn-primary" %>
   </div>
 <% end %>

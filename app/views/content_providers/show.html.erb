@@ -1,5 +1,6 @@
-<p id="notice"><%= notice %></p>
-
+<!-- <p id="notice"><%= notice %></p>-->
+<h1>Content Provider Detail</h1>
+<br>
 <p>
   <strong>Name:</strong>
   <%= @content_provider.name %>
@@ -10,5 +11,6 @@
   <%= @content_provider.thumbnail_image %>
 </p>
 
-<%= link_to 'Edit', edit_content_provider_path(@content_provider) %> |
-<%= link_to 'Back', content_providers_path %>
+<%= link_to 'Edit', edit_content_provider_path(@content_provider), class: "btn btn-outline-primary"  %> 
+<% link_to 'Back', content_providers_path, class: "btn btn-outline-primary"  %>
+<%= link_to 'Back', :back, class: "btn btn-outline-primary"  %>

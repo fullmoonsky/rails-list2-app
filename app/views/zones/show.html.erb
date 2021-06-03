@@ -1,5 +1,6 @@
-<p id="notice"><%= notice %></p>
-
+<!--<p id="notice"><%= notice %></p>-->
+<h1>Zone Detail</h1>
+<br>
 <p>
   <strong>Name:</strong>
   <%= @zone.name %>
@@ -17,8 +18,11 @@
 
 <p>
   <strong>Content provider:</strong>
-  <%= @zone.content_provider_id %>
+  <% @zone.content_provider_id %>
+  <% provider_id = @zone.content_provider_id %>
+  <% provider = ContentProvider.find(provider_id ) %>
+  <%= link_to provider.name, provider %>
 </p>
 
-<%= link_to 'Edit', edit_zone_path(@zone) %> |
-<%= link_to 'Back', zones_path %>
+<%= link_to 'Edit', edit_zone_path(@zone), class: "btn btn-outline-primary"  %> 
+<%= link_to 'Back', zones_path, class: "btn btn-outline-primary"  %>
